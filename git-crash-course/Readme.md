@@ -52,7 +52,7 @@ git config credential.helper 'cache --timeout=3600'
 
 We can clone three ways: HTTPS, SSH, Github CLI
 
-Since we are using GitHub Codespaecs we'll a create temporary directory in our workspace
+Since we are using GitHub Codespaecs we'll a create temporary directory in our workspace.
 
 ```sh
 mkdir /workspace/tmp
