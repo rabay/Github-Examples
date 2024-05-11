@@ -16,6 +16,21 @@ git add Readme.md
 git commit -m "add readme file"
 ```
 
+## Configure EoL character 
+
+### (Linux style)
+
+```sh
+git config --global core.eol lf
+```
+
+### Auto-mode for Windows
+Configure Git to ensure line endings in files you checkout are correct for Windows.
+For compatibility, line endings are converted to Unix style when you commit files.
+
+```sh
+git config --global core.autocrlf true
+```
 
 ## Cloning
 
@@ -99,7 +114,7 @@ git commit
 
 Set the global editor
 ```
-git config --global core.editor emacs
+git config --global core.editor "code --wait"
 ```
 
 Make a commit and commit message without opening an editor
