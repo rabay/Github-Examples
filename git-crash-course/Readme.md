@@ -32,6 +32,22 @@ For compatibility, line endings are converted to Unix style when you commit file
 git config --global core.autocrlf true
 ```
 
+## Credential Store
+
+Using this helper will store your passwords unencrypted on disk, protected only by filesystem permissions. The point of this helper is to reduce the number of times you must type your username or password. 
+
+```sh
+git config credential.helper store
+```
+
+OR
+
+You can provide options via the credential.helper configuration variable (this example increases the cache time to 1 hour):
+
+```sh
+git config credential.helper 'cache --timeout=3600'
+```
+
 ## Cloning
 
 We can clone three ways: HTTPS, SSH, Github CLI
